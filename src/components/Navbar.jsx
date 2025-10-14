@@ -59,13 +59,13 @@ const Navbar = () => {
 
   return (
     <nav ref={navbarRef} className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? "bg-white/99 shadow-lg" : "bg-white/90"}`}>
-      <div className="w-full flex items-center justify-between px-4 py-3 md:px-6 md:py-4">
+      <div className="w-full flex items-center justify-between px-4 py-0 md:px-4 md:py-2">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 group">
           <motion.img 
             src={Images.FullLogo} 
             alt="Ardy Real Estate" 
-            className="h-16 md:h-18 transition-all duration-300" 
+            className="h-16 md:h-16 transition-all duration-300" 
           />
         </Link>
 

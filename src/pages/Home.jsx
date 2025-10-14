@@ -1,63 +1,13 @@
 import React from 'react'
+import HeroSection from '../components/HomeSection/HeroSection'
 
 const Home = () => {
   return (
-    <div>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-      <p>Home </p>
-    </div>
+    <>
+      <main>
+        <HeroSection />
+      </main>
+    </>
   )
 }
 

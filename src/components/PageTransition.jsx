@@ -30,6 +30,7 @@ const PageTransition = ({ children }) => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
+      className="pt-20"
     >
       {children}
     </motion.div>

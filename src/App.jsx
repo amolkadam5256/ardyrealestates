@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import PageTransition from "./components/PageTransition";
+import NotFoundPage from "./components/NotFoundPage";
 
 const App = () => {
   const location = useLocation();
@@ -74,6 +75,20 @@ const App = () => {
                 </PageTransition>
               } 
             />
+
+
+
+             <Route 
+              path="*" 
+              element={
+                <PageTransition>
+                  <NotFoundPage/>
+                </PageTransition>
+              } 
+            />
+
+
+
           </Routes>
         </AnimatePresence>
         <Footer />
