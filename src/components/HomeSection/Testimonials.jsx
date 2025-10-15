@@ -224,7 +224,7 @@ const Testimonials = () => {
                   </p>
                   
                   {/* Flag indicator */}
-                  <div className="absolute top-4 right-4">
+                  <div className="absolute top-1 right-4">
                     {item.location === 'Dubai' ? (
                       <span className="text-xs bg-[#2182BF] text-white px-2 py-1 rounded">🇦🇪 UAE</span>
                     ) : (

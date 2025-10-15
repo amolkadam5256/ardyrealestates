@@ -34,9 +34,9 @@ const AboutHeroSection = () => {
   }, []);
 
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full">
       {/* Hero Section */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50/30">
+      <section className="py-12 md:py-12 lg:py-12 bg-gradient-to-br from-gray-50 to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Text */}
           <div
