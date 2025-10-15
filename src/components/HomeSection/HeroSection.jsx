@@ -304,9 +304,9 @@ const HeroSection = () => {
               >
                 Get Consultation
               </button>
-              <button className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium hover:bg-white/20 transition-all duration-300 border border-white/20 text-base md:text-lg hidden lg:block">
+              {/* <button className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium hover:bg-white/20 transition-all duration-300 border border-white/20 text-base md:text-lg hidden lg:block">
                 Contact Agent
-              </button>
+              </button> */}
             </motion.div>
 
             {/* Quick Stats - Mobile Only */}

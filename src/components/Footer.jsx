@@ -71,9 +71,15 @@ const Footer = () => {
     },
     { 
       icon: <FaPhone className="text-xs" />, 
-      text: "+971 50 2159068", 
+      text: "+971 50 5761914", 
       color: secondaryColor,
       href: "tel:+971505761914"
+    },
+    { 
+      icon: <FaPhone className="text-xs" />, 
+      text: "+971 52 842 6615", 
+      color: secondaryColor,
+      href: "tel:+971528426615"
     },
     { 
       icon: <FaEnvelope className="text-xs" />, 

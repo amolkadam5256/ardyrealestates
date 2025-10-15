@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import PageTransition from "./components/PageTransition";
 import NotFoundPage from "./components/NotFoundPage";
+import DraggableSocialMenu from "./components/DraggableSocialMenu";
 
 const App = () => {
   const location = useLocation();
@@ -35,56 +36,56 @@ const App = () => {
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route 
-              path="/" 
+            <Route
+              path="/"
               element={
                 <PageTransition>
                   <Home />
                 </PageTransition>
-              } 
+              }
             />
-            <Route 
-              path="/about" 
+            <Route
+              path="/about"
               element={
                 <PageTransition>
                   <About />
                 </PageTransition>
-              } 
+              }
             />
-            <Route 
-              path="/team" 
+            <Route
+              path="/team"
               element={
                 <PageTransition>
                   <Team />
                 </PageTransition>
-              } 
+              }
             />
-            <Route 
-              path="/services" 
+            <Route
+              path="/services"
               element={
                 <PageTransition>
                   <Services />
                 </PageTransition>
-              } 
+              }
             />
-            <Route 
-              path="/contact" 
+            <Route
+              path="/contact"
               element={
                 <PageTransition>
                   <Contact />
                 </PageTransition>
-              } 
+              }
             />
 
 
 
-             <Route 
-              path="*" 
+            <Route
+              path="*"
               element={
                 <PageTransition>
-                  <NotFoundPage/>
+                  <NotFoundPage />
                 </PageTransition>
-              } 
+              }
             />
 
 
@@ -92,6 +93,7 @@ const App = () => {
           </Routes>
         </AnimatePresence>
         <Footer />
+        <DraggableSocialMenu />
       </main>
     </>
   );
