@@ -55,7 +55,7 @@ const ServicesGrid = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -73,12 +73,12 @@ const ServicesGrid = () => {
               className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group overflow-hidden border border-gray-100 hover:border-[#2182BF]/30"
             >
               {/* Image Background with Overlay */}
-              <div 
+              <div
                 className="relative h-56 bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url('${service.image}')` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#2182BF]/80 to-[#BF364F]/80"></div>
-                
+
                 {/* Content Container with Better Spacing */}
                 <div className="absolute inset-0 p-6 flex flex-col">
                   {/* Icon and Title Row */}
@@ -92,7 +92,7 @@ const ServicesGrid = () => {
                       </h3>
                     </div>
                   </div>
-                  
+
                   {/* Description */}
                   <div className="flex-1 overflow-hidden">
                     <p className="text-white/90 text-sm leading-relaxed line-clamp-3">
@@ -101,7 +101,7 @@ const ServicesGrid = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Features List */}
               <div className="p-6">
                 <ul className="space-y-3 mb-6">
@@ -112,16 +112,16 @@ const ServicesGrid = () => {
                     </li>
                   ))}
                 </ul>
-                
+
                 {/* Button with Link */}
-                <Link 
+                <Link
                   to={service.path}
                   className="block w-full bg-gradient-to-r from-[#2182BF] to-[#BF364F] hover:from-[#1a6ba3] hover:to-[#a82b41] text-white py-3 rounded-lg font-semibold transition-all duration-300 transform group-hover:scale-105 shadow-md hover:shadow-lg text-center"
                 >
                   Learn More
                 </Link>
               </div>
-            </div>
+            </div>  
           ))}
         </div>
       </div>

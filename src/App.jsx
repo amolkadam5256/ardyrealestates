@@ -13,6 +13,14 @@ import PageTransition from "./components/PageTransition";
 import NotFoundPage from "./components/NotFoundPage";
 import DraggableSocialMenu from "./components/DraggableSocialMenu";
 
+// Import service pages
+import OffPlanPropertyManagement from "./pages/ServicesPages/OffPlanPropertyManagement";
+import PropertyManagement from "./pages/ServicesPages/PropertyManagement";
+import BuyingSelling from "./pages/ServicesPages/BuyingSelling";
+import LeasingServices from "./pages/ServicesPages/LeasingServices";
+import ProjectSalesMarketing from "./pages/ServicesPages/ProjectSalesMarketing";
+import ProductDesign from "./pages/ServicesPages/ProductDesign";
+
 const App = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -77,7 +85,55 @@ const App = () => {
               }
             />
 
-
+            {/* Service Pages Routes */}
+            <Route
+              path="/services/off-plan-property-management"
+              element={
+                <PageTransition>
+                  <OffPlanPropertyManagement />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/services/property-management"
+              element={
+                <PageTransition>
+                  <PropertyManagement />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/services/buying-selling"
+              element={
+                <PageTransition>
+                  <BuyingSelling />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/services/leasing"
+              element={
+                <PageTransition>
+                  <LeasingServices />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/services/project-sales-marketing"
+              element={
+                <PageTransition>
+                  <ProjectSalesMarketing />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/services/product-design"
+              element={
+                <PageTransition>
+                  <ProductDesign />
+                </PageTransition>
+              }
+            />
 
             <Route
               path="*"
@@ -87,9 +143,6 @@ const App = () => {
                 </PageTransition>
               }
             />
-
-
-
           </Routes>
         </AnimatePresence>
         <Footer />

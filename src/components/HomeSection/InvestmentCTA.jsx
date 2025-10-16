@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const InvestmentCTA = () => {
   return (
@@ -74,18 +75,24 @@ const InvestmentCTA = () => {
           </div>
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white text-[#2182BF] px-6 py-3 font-semibold text-sm hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2 group">
+            <Link 
+              to="/contact" 
+              className="bg-white text-[#2182BF] px-6 py-3 font-semibold text-sm hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2 group"
+            >
               <svg className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
               </svg>
               Book Free Consultation
-            </button>
-            <button className="bg-transparent border-2 border-white text-white px-6 py-3 font-semibold text-sm hover:bg-white/10 transition-all duration-300 backdrop-blur-sm hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2 group">
+            </Link>
+            <Link 
+              to="/services" 
+              className="bg-transparent border-2 border-white text-white px-6 py-3 font-semibold text-sm hover:bg-white/10 transition-all duration-300 backdrop-blur-sm hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2 group"
+            >
               <svg className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
               </svg>
-              View All Properties
-            </button>
+              View All Services
+            </Link>
           </div>
 
           {/* Trust Badges */}
