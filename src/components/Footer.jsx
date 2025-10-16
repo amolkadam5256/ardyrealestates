@@ -36,7 +36,7 @@ const Footer = () => {
       links: [
         { name: "Home", path: "/", icon: <FaHome className="text-xs" /> },
         { name: "About", path: "/about", icon: <FaBuilding className="text-xs" /> },
-        { name: "Team", path: "/team", icon: <FaAward className="text-xs" /> },
+        { name: "Our Team", path: "/our-team", icon: <FaAward className="text-xs" /> },
         { name: "Why Invest in Dubai", path: "/invest-dubai", icon: <FaChartLine className="text-xs" /> },
         { name: "Contact", path: "/contact", icon: <FaEnvelope className="text-xs" /> }
       ]

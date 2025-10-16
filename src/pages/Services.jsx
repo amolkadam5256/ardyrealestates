@@ -1,8 +1,18 @@
 import React from 'react'
-
+import HeroSection from '../components/ServicesSection/HeroSection'
+import ServicesGrid  from '../components/ServicesSection/ServicesGrid'
+import ProcessSection from '../components/ServicesSection/ProcessSection'
+import WhyChooseUs from '../components/AboutSection/WhyChooseUs'
 const Services = () => {
   return (
-    <div>Services</div>
+    <>
+      <main>
+        <HeroSection/>
+        <ServicesGrid />
+        <ProcessSection/>
+        <WhyChooseUs />
+      </main>
+    </>
   )
 }
 

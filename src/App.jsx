@@ -53,7 +53,7 @@ const App = () => {
               }
             />
             <Route
-              path="/team"
+              path="/our-team"
               element={
                 <PageTransition>
                   <Team />
