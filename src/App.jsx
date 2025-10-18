@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Team from "./pages/Team";
+import WhyInvestDubai from "./pages/WhyInvestDubai";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
@@ -73,6 +74,14 @@ const App = () => {
               element={
                 <PageTransition>
                   <Services />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/why-invest-in-dubai"
+              element={
+                <PageTransition>
+                  <WhyInvestDubai />
                 </PageTransition>
               }
             />

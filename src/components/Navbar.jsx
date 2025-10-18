@@ -46,7 +46,7 @@ const Navbar = () => {
         { name: "Product Design", path: "/services/product-design" },
       ],
     },
-    { name: "Why to invest in Dubai", path: "/invest-dubai" },
+    { name: "Why to invest in Dubai", path: "/why-invest-in-dubai" },
     { name: "Contact", path: "/contact" },
   ];
 
