@@ -65,17 +65,17 @@ const HeroContactSection = () => {
       </div>
 
       {/* Content - No Changes */}
-      <div className="relative z-10 py-20 px-8">
-        <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#2182BF] to-[#BF364F] text-white px-8 py-4 mb-6 shadow-lg">
+      <div className="relative z-10 py-16 px-6 sm:py-20 sm:px-8">
+        <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#2182BF] to-[#BF364F] text-white px-6 py-3 mb-6 shadow-lg">
           <div className="flex space-x-2">
-            <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
-            <div className="w-3 h-3 bg-white rounded-full animate-pulse" style={{animationDelay: '300ms'}}></div>
-            <div className="w-3 h-3 bg-white rounded-full animate-pulse" style={{animationDelay: '600ms'}}></div>
+            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+            <div className="w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '300ms'}}></div>
+            <div className="w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '600ms'}}></div>
           </div>
-          <span className="text-sm font-bold tracking-widest uppercase">EXCLUSIVE PROPERTY MATCHING SERVICE</span>
+          <span className="text-xs sm:text-sm font-bold tracking-widest uppercase">EXCLUSIVE PROPERTY MATCHING SERVICE</span>
         </div>
 
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
           Discover Your Perfect 
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mt-2">
             Dubai Property
@@ -83,26 +83,26 @@ const HeroContactSection = () => {
         </h2>
         
         <div className="max-w-3xl mx-auto">
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
             Let our expert team handpick properties that match your exact requirements. 
             From luxury apartments to premium villas, we'll find your ideal investment in Dubai's most sought-after locations.
           </p>
           
           {/* Stats Bar */}
-          <div className="flex justify-center items-center gap-8 py-6 border-y border-white/10  rounded-lg">
+          <div className="flex justify-center items-center gap-4 sm:gap-8 py-6 border-y border-white/10 rounded-lg">
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">15K+</div>
-              <div className="text-sm text-white/80">Properties</div>
+              <div className="text-xl sm:text-2xl font-bold text-white">15K+</div>
+              <div className="text-xs sm:text-sm text-white/80">Properties</div>
             </div>
-            <div className="w-1 h-8 bg-gradient-to-b from-white to-blue-200"></div>
+            <div className="w-1 h-6 sm:h-8 bg-gradient-to-b from-white to-blue-200"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">98%</div>
-              <div className="text-sm text-white/80">Success Rate</div>
+              <div className="text-xl sm:text-2xl font-bold text-white">98%</div>
+              <div className="text-xs sm:text-sm text-white/80">Success Rate</div>
             </div>
-            <div className="w-1 h-8 bg-gradient-to-b from-white to-blue-200"></div>
+            <div className="w-1 h-6 sm:h-8 bg-gradient-to-b from-white to-blue-200"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">24h</div>
-              <div className="text-sm text-white/80">Response Time</div>
+              <div className="text-xl sm:text-2xl font-bold text-white">24h</div>
+              <div className="text-xs sm:text-sm text-white/80">Response Time</div>
             </div>
           </div>
         </div>
