@@ -35,7 +35,7 @@ const ContactForm = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // Replace with your actual key
+          access_key: "244b265f-24ee-4f12-b4bd-5646738facb7", // Replace with your actual key
           subject: "New Property Inquiry - ARDY Real Estate",
           name: formData.name,
           email: formData.email,

@@ -71,7 +71,7 @@ const HeroSection = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY",
+          access_key: "244b265f-24ee-4f12-b4bd-5646738facb7",
           ...formData,
           subject: "New Lead from Ardy Real Estate",
         }),

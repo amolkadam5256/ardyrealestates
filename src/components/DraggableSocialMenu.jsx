@@ -23,21 +23,21 @@ const DraggableSocialMenu = () => {
       name: 'Facebook',
       icon: <FaFacebookF />,
       color: '#1877F2',
-      url: 'https://facebook.com/ardyrealestate'
+      url: 'https://www.facebook.com/ardyrealestate'
     },
     {
       id: 'instagram',
       name: 'Instagram',
       icon: <FaInstagram />,
       color: '#E4405F',
-      url: 'https://instagram.com/ardyrealestate'
+      url: 'https://www.instagram.com/ardyrealestate'
     },
     {
       id: 'linkedin',
       name: 'LinkedIn',
       icon: <FaLinkedinIn />,
       color: '#0A66C2',
-      url: 'https://linkedin.com/company/ardyrealestate'
+      url: 'https://www.linkedin.com/company/ardy-real-estate'
     },
     {
       id: 'youtube',

@@ -55,12 +55,12 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaFacebookF />, url: "#", color: "#1877F2", name: "Facebook" },
+    { icon: <FaFacebookF />, url: "https://www.facebook.com/ardyrealestate", color: "#1877F2", name: "Facebook" },
     { icon: <FaTwitter />, url: "#", color: "#1DA1F2", name: "Twitter" },
-    { icon: <FaInstagram />, url: "#", color: "#E1306C", name: "Instagram" },
-    { icon: <FaLinkedinIn />, url: "#", color: "#0077B5", name: "LinkedIn" },
+    { icon: <FaInstagram />, url: "https://www.instagram.com/ardyrealestate", color: "#E1306C", name: "Instagram" },
+    { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/ardy-real-estate", color: "#0077B5", name: "LinkedIn" },
     { icon: <FaYoutube />, url: "#", color: "#FF0000", name: "YouTube" },
-    { icon: <FaWhatsapp />, url: "#", color: "#25D366", name: "WhatsApp" },
+    { icon: <FaWhatsapp />, url: "https://wa.me/971505761914", color: "#25D366", name: "WhatsApp" },
   ];
 
   const contactInfo = [
