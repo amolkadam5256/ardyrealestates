@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaChevronDown, FaChevronUp, FaPhone, FaTimes ,FaYoutube  } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaChevronDown, FaChevronUp, FaPhone, FaTimes ,FaYoutube ,FaWhatsapp  } from "react-icons/fa";
 import Images from "../assets/images/images";
 
 const Navbar = () => {
