@@ -59,7 +59,7 @@ const Footer = () => {
     { icon: <FaTwitter />, url: "#", color: "#1DA1F2", name: "Twitter" },
     { icon: <FaInstagram />, url: "https://www.instagram.com/ardyrealestate", color: "#E1306C", name: "Instagram" },
     { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/ardy-real-estate", color: "#0077B5", name: "LinkedIn" },
-    { icon: <FaYoutube />, url: "#", color: "#FF0000", name: "YouTube" },
+    { icon: <FaYoutube />, url: "https://www.youtube.com/@ArdyRealEstate-d8x", color: "#FF0000", name: "YouTube" },
     { icon: <FaWhatsapp />, url: "https://wa.me/971505761914", color: "#25D366", name: "WhatsApp" },
   ];
 
@@ -83,9 +83,9 @@ const Footer = () => {
     },
     { 
       icon: <FaEnvelope className="text-xs" />, 
-      text: "info@ardyrealestate.com", 
+      text: "info@ardyrealestates.com", 
       color: "#6B7280",
-      href: "mailto:info@ardyrealestate.com"
+      href: "mailto:info@ardyrealestates.com"
     }
   ];
 

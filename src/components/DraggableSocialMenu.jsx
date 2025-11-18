@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  FaFacebookF, 
-  FaTwitter, 
-  FaInstagram, 
-  FaLinkedinIn, 
-  FaYoutube, 
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
   FaWhatsapp,
   FaTimes,
   FaShareAlt
@@ -13,7 +13,7 @@ import {
 
 const DraggableSocialMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [position, setPosition] = useState({ x: 20, y: 60 }); 
+  const [position, setPosition] = useState({ x: 20, y: 60 });
   const [isDragging, setIsDragging] = useState(false);
   const dragConstraintsRef = useRef(null);
 
@@ -44,7 +44,7 @@ const DraggableSocialMenu = () => {
       name: 'YouTube',
       icon: <FaYoutube />,
       color: '#FF0000',
-      url: 'https://youtube.com/ardyrealestate'
+      url: 'https://www.youtube.com/@ArdyRealEstate-d8x'
     },
     {
       id: 'whatsapp',
@@ -58,7 +58,7 @@ const DraggableSocialMenu = () => {
       name: 'Twitter',
       icon: <FaTwitter />,
       color: '#1DA1F2',
-      url: 'https://twitter.com/ardyrealestate'
+      url: '#'
     }
   ];
 
@@ -94,8 +94,8 @@ const DraggableSocialMenu = () => {
 
   const iconVariants = {
     hidden: { opacity: 0, scale: 0 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
       transition: { type: "spring", stiffness: 300, damping: 20 }
     },
@@ -160,7 +160,7 @@ const DraggableSocialMenu = () => {
                       style={{ backgroundColor: platform.color }}
                     >
                       {platform.icon}
-                      
+
                       {/* Tooltip */}
                       <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
                         <div className="bg-gray-900 text-white text-xs py-1 px-2 rounded whitespace-nowrap">
@@ -190,7 +190,7 @@ const DraggableSocialMenu = () => {
 
           {/* Drag Handle Visual Feedback */}
           <motion.div
-            animate={{ 
+            animate={{
               opacity: isDragging ? 1 : 0.5,
               scale: isDragging ? 1.2 : 1
             }}

@@ -51,11 +51,14 @@ const Navbar = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaFacebookF />, url: "https://www.facebook.com/yourbrand", color: "#1877F2" },
-    { icon: <FaTwitter />, url: "https://www.twitter.com/yourbrand", color: "#1DA1F2" },
-    { icon: <FaInstagram />, url: "https://www.instagram.com/yourbrand", color: "#E1306C" },
-    { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/yourbrand", color: "#0077B5" },
-  ];
+  { icon: <FaFacebookF />, url: "https://www.facebook.com/ardyrealestate", color: "#1877F2" },
+  { icon: <FaTwitter />, url: "https://twitter.com/ardyrealestate", color: "#1DA1F2" },
+  { icon: <FaInstagram />, url: "https://www.instagram.com/ardyrealestate", color: "#E1306C" },
+  { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/ardy-real-estate", color: "#0077B5" },
+  { icon: <FaYoutube />, url: "https://www.youtube.com/@ArdyRealEstate-d8x", color: "#FF0000" },
+  { icon: <FaWhatsapp />, url: "https://wa.me/971505761914", color: "#25D366" },
+];
+
 
   return (
     <nav ref={navbarRef} className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? "bg-white/99 shadow-lg" : "bg-white/90"}`}>
