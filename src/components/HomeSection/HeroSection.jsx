@@ -63,7 +63,7 @@ const HeroSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -78,7 +78,7 @@ const HeroSection = () => {
       });
 
       const data = await response.json();
-      
+
       if (data.success) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', interest: '' });
@@ -113,8 +113,8 @@ const HeroSection = () => {
 
   const formVariants = {
     hidden: { opacity: 0, x: 50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       x: 0,
       transition: {
         duration: 0.8,
@@ -125,8 +125,8 @@ const HeroSection = () => {
 
   const mobileFormVariants = {
     hidden: { opacity: 0, y: '100%' },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 0.6,
@@ -160,7 +160,7 @@ const HeroSection = () => {
             }}
             className="absolute inset-0"
           >
-            <div 
+            <div
               className="w-full h-full bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: `url(${dubaiLocations[currentSlide].image})`,
@@ -221,12 +221,10 @@ const HeroSection = () => {
             onClick={() => setCurrentSlide(index)}
             className="flex flex-col items-center group"
           >
-            <div className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-[#2182BF] scale-125' : 'bg-white/50'
-            }`} />
-            <span className={`text-xs transition-all duration-300 hidden md:block mt-1 ${
-              index === currentSlide ? 'text-white font-medium' : 'text-white/60'
-            }`}>
+            <div className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-[#2182BF] scale-125' : 'bg-white/50'
+              }`} />
+            <span className={`text-xs transition-all duration-300 hidden md:block mt-1 ${index === currentSlide ? 'text-white font-medium' : 'text-white/60'
+              }`}>
               {location.title.split(' ')[0]}
             </span>
           </button>
@@ -284,7 +282,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-base md:text-lg lg:text-xl text-gray-300 mb-5 md:mb-6 leading-relaxed max-w-2xl mx-auto lg:mx-0"
             >
-              Discover exclusive properties in Dubai's most prestigious locations. 
+              Discover exclusive properties in Dubai's most prestigious locations.
               Your perfect investment opportunity awaits.
             </motion.p>
 
@@ -298,7 +296,7 @@ const HeroSection = () => {
               <button className="bg-gradient-to-r from-[#2182BF] to-[#BF364F] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium hover:shadow-lg transition-all duration-300 text-base md:text-lg">
                 View Properties
               </button>
-              <button 
+              <button
                 onClick={() => setShowForm(true)}
                 className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium hover:bg-white/20 transition-all duration-300 border border-white/20 text-base md:text-lg lg:hidden"
               >
@@ -412,14 +410,13 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    className={`mt-4 p-3 rounded text-center text-sm ${
-                      submitStatus === 'success' 
-                        ? 'bg-green-500/20 text-green-300 border border-green-500/30' 
-                        : 'bg-red-500/20 text-red-300 border border-red-500/30'
-                    }`}
+                    className={`mt-4 p-3 rounded text-center text-sm ${submitStatus === 'success'
+                      ? 'bg-green-500/20 text-green-300 border border-green-500/30'
+                      : 'bg-red-500/20 text-red-300 border border-red-500/30'
+                      }`}
                   >
-                    {submitStatus === 'success' 
-                      ? 'Thank you! We will contact you soon.' 
+                    {submitStatus === 'success'
+                      ? 'Thank you! We will contact you soon.'
                       : 'Error sending message. Please try again.'}
                   </motion.div>
                 )}
@@ -535,14 +532,13 @@ const HeroSection = () => {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
-                      className={`mt-4 p-4 rounded-lg text-center ${
-                        submitStatus === 'success' 
-                          ? 'bg-green-100 text-green-700 border border-green-300' 
-                          : 'bg-red-100 text-red-700 border border-red-300'
-                      }`}
+                      className={`mt-4 p-4 rounded-lg text-center ${submitStatus === 'success'
+                        ? 'bg-green-100 text-green-700 border border-green-300'
+                        : 'bg-red-100 text-red-700 border border-red-300'
+                        }`}
                     >
-                      {submitStatus === 'success' 
-                        ? 'Thank you! We will contact you soon.' 
+                      {submitStatus === 'success'
+                        ? 'Thank you! We will contact you soon.'
                         : 'Error sending message. Please try again.'}
                     </motion.div>
                   )}
