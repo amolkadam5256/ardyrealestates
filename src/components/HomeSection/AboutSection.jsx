@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaBuilding, FaHandshake, FaUsers, FaStar, FaAward, FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa';
 import { IoBusiness, IoRocket, IoDiamond } from 'react-icons/io5';
+import Images from '../../assets/images/images';
 
 const AboutSection = () => {
   const containerVariants = {
@@ -41,11 +42,11 @@ const AboutSection = () => {
             <div className="w-2 h-2 bg-gradient-to-r from-[#2182BF] to-[#BF364F] rounded-full animate-pulse"></div>
             <span className="text-sm font-semibold text-gray-700 tracking-wide">ABOUT ARDY REAL ESTATE</span>
           </div>
-          
+
           <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
             Connecting You to Dubai's <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2182BF] to-[#BF364F]">Most Prestigious</span> Developments
           </h1>
-          
+
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Powered by Majestic Group - Your trusted partner in premium Dubai real estate investments
           </p>
@@ -67,7 +68,7 @@ const AboutSection = () => {
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">Who We Are</h2>
             </div>
             <p className="text-gray-600 leading-relaxed mb-6">
-              ARDY Real Estate is the Dubai-based extension of the Majestic Group, bringing years of expertise in real estate 
+              ARDY Real Estate is the Dubai-based extension of the Majestic Group, bringing years of expertise in real estate
               and investment to the UAE's dynamic property market.
             </p>
             <p className="text-gray-600 leading-relaxed">
@@ -85,12 +86,11 @@ const AboutSection = () => {
               <h2 className="text-2xl lg:text-3xl font-bold">Our Mission</h2>
             </div>
             <p className="text-blue-100 leading-relaxed text-lg">
-              Deliver exceptional property opportunities with trust, transparency, and high returns, helping clients make 
+              Deliver exceptional property opportunities with trust, transparency, and high returns, helping clients make
               smart, long-term investments in real estate.
             </p>
           </motion.div>
         </motion.div>
-
         {/* Developer Partners */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -99,13 +99,19 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12">Our Developer Partners</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12">
+            Our Developer Partners
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Danube Properties */}
             <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-                  <FaBuilding className="text-2xl text-[#2182BF]" />
+                <div className="w-16 h-16 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100">
+                  <img
+                    src={Images.danube} // ✅ Add your image path
+                    alt="Danube Properties Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">Danube Properties</h3>
@@ -113,7 +119,7 @@ const AboutSection = () => {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                A leading UAE developer known for innovation, premium design, and flexible payment plans. 
+                A leading UAE developer known for innovation, premium design, and flexible payment plans.
                 Our collaboration focuses exclusively on Dubai-based residential and commercial projects.
               </p>
             </div>
@@ -121,8 +127,12 @@ const AboutSection = () => {
             {/* BNW Realty */}
             <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center">
-                  <IoDiamond className="text-2xl text-[#BF364F]" />
+                <div className="w-16 h-16 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100">
+                  <img
+                    src={Images.bnw} // ✅ Add your image path
+                    alt="BNW Realty Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">BNW Realty</h3>
@@ -130,12 +140,13 @@ const AboutSection = () => {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Specialists in luxury waterfront residences and lifestyle communities across Dubai and Ras Al Khaimah. 
+                Specialists in luxury waterfront residences and lifestyle communities across Dubai and Ras Al Khaimah.
                 Premium design, strategic locations, and lifestyle-focused developments.
               </p>
             </div>
           </div>
         </motion.div>
+
 
         {/* Why Choose Us */}
         <motion.div
@@ -168,7 +179,7 @@ const AboutSection = () => {
           </div>
         </motion.div>
 
-        
+
       </div>
     </section>
   );

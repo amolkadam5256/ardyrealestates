@@ -293,9 +293,6 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start"
             >
-              <button className="bg-gradient-to-r from-[#2182BF] to-[#BF364F] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium hover:shadow-lg transition-all duration-300 text-base md:text-lg">
-                View Properties
-              </button>
               <button
                 onClick={() => setShowForm(true)}
                 className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium hover:bg-white/20 transition-all duration-300 border border-white/20 text-base md:text-lg lg:hidden"

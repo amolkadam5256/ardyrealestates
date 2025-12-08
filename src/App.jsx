@@ -21,6 +21,10 @@ import BuyingSelling from "./pages/ServicesPages/BuyingSelling";
 import LeasingServices from "./pages/ServicesPages/LeasingServices";
 import ProjectSalesMarketing from "./pages/ServicesPages/ProjectSalesMarketing";
 import ProductDesign from "./pages/ServicesPages/ProductDesign";
+import ScrollToTop from "./components/ScrollToTop";
+import Projects from "./pages/Projects";
+import DanubeProperties from "./pages/ProjectsPage/DanubeProperties";
+import Bnw_properties from "./pages/ProjectsPage/Bnw_properties";
 
 const App = () => {
   const location = useLocation();
@@ -43,6 +47,7 @@ const App = () => {
     <>
       <main>
         <Navbar />
+        <ScrollToTop />
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route
@@ -140,6 +145,34 @@ const App = () => {
               element={
                 <PageTransition>
                   <ProductDesign />
+                </PageTransition>
+              }
+            />
+
+
+            <Route
+              path="projects"
+              element={
+                <PageTransition>
+                  <Projects />
+                </PageTransition>
+              }
+            />
+
+            <Route
+              path="/projects/danube-properties"
+              element={
+                <PageTransition>
+                  <DanubeProperties />
+                </PageTransition>
+              }
+            />
+
+            <Route
+              path="/projects/bnw-properties"
+              element={
+                <PageTransition>
+                  <Bnw_properties />
                 </PageTransition>
               }
             />

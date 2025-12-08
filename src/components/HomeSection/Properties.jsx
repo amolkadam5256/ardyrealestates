@@ -20,7 +20,7 @@ const Properties = () => {
       title: "Aqua Maya",
       address: "Al Marjan Island, Ras Al Khaimah",
       type: "Luxury Residences",
-      path: 'aqua_maya',
+      path: 'bnw-properties',
       price: "AED 1.7M",
       bedrooms: "1-4 BR",
       size: "Up to 5,121 sq.ft",
@@ -37,7 +37,7 @@ const Properties = () => {
       title: "Aspirez By Danube",
       address: "Dubai Sports City, Dubai",
       type: "Premium Homes & Offices",
-      path: 'aspirez_danube',
+      path: 'danube-properties',
       price: "AED 850K",
       bedrooms: "Studio - 3BR",
       size: "Flexible Units",
@@ -47,76 +47,102 @@ const Properties = () => {
     }
   ], []);
 
-  const otherProperties = useMemo(() => [
-    {
-      imageUrls: [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-        "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800"
-      ],
-      title: "Ocean Pearl",
-      address: "Jumeirah Beach Residence, Dubai",
-      type: "Beachfront Apartments",
-      path: 'ocean_pearl',
-      price: "AED 2.8M",
-      bedrooms: "2-3 BR",
-      size: "1,200 - 2,800 sq.ft",
-      handover: "Q2 2027",
-      featured: false,
-      paymentPlan: "60/40 Payment Plan"
-    },
-    {
-      imageUrls: [
-        "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800",
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
-        "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800"
-      ],
-      title: "Sky Gardens",
-      address: "Business Bay, Dubai",
-      type: "Luxury Towers",
-      path: 'sky_gardens',
-      price: "AED 1.9M",
-      bedrooms: "1-4 BR",
-      size: "800 - 3,200 sq.ft",
-      handover: "Q3 2026",
-      featured: true,
-      paymentPlan: "70/30 Payment Plan"
-    },
-    {
-      imageUrls: [
-        "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800",
-        "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800",
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800"
-      ],
-      title: "Desert Oasis",
-      address: "Dubai Hills Estate, Dubai",
-      type: "Villa Community",
-      path: 'desert_oasis',
-      price: "AED 4.2M",
-      bedrooms: "4-6 BR",
-      size: "3,500 - 6,000 sq.ft",
-      handover: "Q1 2028",
-      featured: false,
-      paymentPlan: "5 Years Plan"
-    },
-    {
-      imageUrls: [
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
-        "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800"
-      ],
-      title: "Palm Residences",
-      address: "Palm Jumeirah, Dubai",
-      type: "Waterfront Villas",
-      path: 'palm_residences',
-      price: "AED 6.5M",
-      bedrooms: "5-7 BR",
-      size: "4,800 - 7,200 sq.ft",
-      handover: "Q4 2027",
-      featured: true,
-      paymentPlan: "Custom Plan"
+const otherProperties = useMemo(() => [
+  {
+    imageUrls: [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800"
+    ],
+    title: "Aqua Maya",
+    address: "Al Marjan Island, Ras Al Khaimah",
+    type: "Waterfront Residences",
+    path: "bnw-properties",
+    price: "AED 1.7M - 10.38M",
+    bedrooms: "1-4 BR + Retail",
+    size: "715 - 5,121 sq.ft",
+    handover: "Q4 2027",
+    featured: true,
+    paymentPlan: "50/50 Payment Plan",
+    developer: "BNW Developments",
+    highlights: ["Fully Furnished", "Waterfront Living", "G+9 | 99 Units", "Retail Space Available"],
+    contact: {
+      name: "Drishti Chadha",
+      phone: "+971 523977102",
+      position: "Sales Manager, BNW Developments"
     }
-  ], []);
+  },
+  {
+    imageUrls: [
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800"
+    ],
+    title: "Aspirz By Danube",
+    address: "Dubai Sports City, Dubai",
+    type: "Premium Homes & Offices",
+    path: "danube-properties",
+    price: "AED 850K - 2.5M",
+    bedrooms: "Offices & 1-3 BR Apartments",
+    size: "Various Sizes",
+    handover: "Q4 2028",
+    featured: true,
+    paymentPlan: "6.5 Years Payment Plan",
+    developer: "Danube Properties",
+    highlights: ["Fully Furnished", "2B+G+7P+40+Roof", "Mixed Use", "Pre-Launch Offer"],
+    structure: {
+      residential: "Level 17-40",
+      offices: "Level 2-15",
+      totalFloors: 40
+    }
+  },
+  {
+    imageUrls: [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800",
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800"
+    ],
+    title: "Breez By Danube",
+    address: "Dubai Maritime City, Dubai",
+    type: "Residential Tower",
+    path: "danube-properties",
+    price: "AED 1.3M - 30M",
+    bedrooms: "Studio - 5 BR Villas",
+    size: "Various Sizes",
+    handover: "March 2029",
+    featured: true,
+    paymentPlan: "6 Year Payment Plan",
+    developer: "Danube Properties",
+    highlights: ["Tallest Tower in Area", "40+ Amenities", "Fully Furnished", "60 Floors"],
+    unitTypes: {
+      studio: "AED 1.3M - 1.7M",
+      oneBed: "AED 1.975M - 3M",
+      twoBed: "AED 3.75M - 4M",
+      threeBed: "AED 5M - 5.5M",
+      fourBed: "AED 10M",
+      fiveBed: "AED 30M"
+    }
+  },
+  {
+    imageUrls: [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800"
+    ],
+    title: "FashionTV Acacia",
+    address: "Al Marjan Island, Ras Al Khaimah",
+    type: "Luxury Residences",
+    path: "bnw-properties",
+    price: "Premium Pricing",
+    bedrooms: "1-4 BR + Penthouses",
+    size: "Various Sizes",
+    handover: "Coming Soon",
+    featured: true,
+    paymentPlan: "Flexible Plans",
+    developer: "BNW Developments",
+    highlights: ["Architecture + Lifestyle + Fashion", "Fully Furnished", "First of its Kind", "Exclusive Launch"]
+  }
+], []);
 
   const [currentImageIndexFeatured, setCurrentImageIndexFeatured] = useState(
     Array(featuredProperties.length).fill(0)
