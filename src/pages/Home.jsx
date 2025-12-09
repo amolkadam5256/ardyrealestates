@@ -9,10 +9,10 @@ const Home = () => {
     <>
       <main>
         <HeroSection />
-        <AboutSection/>
-        <Properties/>
-        <InvestmentCTA/>
-        <Testimonials/>
+        <AboutSection />
+        <Properties />
+        <InvestmentCTA />
+        <Testimonials />
       </main>
     </>
   )
